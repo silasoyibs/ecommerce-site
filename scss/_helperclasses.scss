@@ -1,0 +1,31 @@
+.center-container {
+    margin: 0 auto;
+    max-width: 124rem;
+    padding: 0 10rem;
+  }
+  .grid {
+    display: grid;
+    column-gap: 8rem;
+    row-gap: 2rem;
+  }
+  .grid--2-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid--3-cols {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .grid--4-cols {
+    grid-template-columns: repeat(4, 1fr);
+  } 
+  .grid--5-cols {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .btn{
+    color:var(--gray);
+    background-color: var(--white);
+    // padding:2rem 5.2rem;
+  }
+  .btn:hover{
+    background-color: var(--white);
+  }

@@ -1,0 +1,108 @@
+.Best-selling-product-bg-container{
+    background-color: var(--pale-blue);
+    width:100%;
+    & h2,span{
+        font-size:2.4rem;
+        font-weight:700;
+        color:var(--dark-gray)
+    }
+    & h2 span{
+        color:#353737;
+        margin-left:5px;
+    }
+
+ &__inner__card{
+    display:grid;
+    grid-template-rows:min-content 1fr min-content;
+    background-color: var(--white);
+    height:28.6rem;
+    width:30rem;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+    &__discount-off{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height:4rem;
+        width:13.5rem;
+        background-color: var(--dark-blue);
+        color:var(--white);
+        border-radius:16px 0px 0px 0px;
+        -webkit-border-radius:16px 0px 0px 0px;
+        -moz-border-radius:16px 0px 0px 0px;
+        -ms-border-radius:16px 0px 0px 0px;
+        -o-border-radius:16px 0px 0px 0px;
+}
+&__discount-off span{
+    font-size: 1.3rem;
+    color:var(--white);
+    font-weight:600;
+}
+   
+&-item{
+      display: flex;
+    //   height:100%;
+      padding: 0 2rem;
+
+    &--right{
+        align-self:center;
+    }
+    &--left{
+        padding-top:3rem;
+        display:flex;
+        gap:15px;
+        flex-direction: column;
+        font-weight: 600;
+        & h2{
+            font-size:2.2rem;
+            color:#2A2A2A;
+            
+        }
+        & p{
+            font-size:1.4rem;
+            color:var(--gray);
+            
+        }
+        & span{
+            font-size:2.4rem;
+            color:var(--light-blue);
+        }
+        &__rating{
+            display:flex;
+            align-items: center;
+            gap:5px;
+            &__star{
+            font-size: 2.4rem;
+            display:flex;
+        
+        }
+        
+        & p{
+            font-family:sans-serif;
+            font-weight:700;
+            font-size: 1.2rem;
+            color:var(--dark-gray);
+        }
+        & p span{
+            font-family:sans-serif;
+            font-weight:400;
+            font-size: 1.2rem;
+            color:var(--gray);
+        }
+         }
+         
+    }
+
+ }
+
+}
+}
+.card-container{
+    padding:5rem 0;
+    grid-template-columns:repeat(auto-fit, minmax(30rem,1fr));
+    gap:2rem;
+    justify-items: center;
+}
