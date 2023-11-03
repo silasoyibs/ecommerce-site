@@ -8,6 +8,7 @@
 }
 
 
+
 .grid-4-cols--hero{
     align-items: center;
     grid-template-columns: min-content 1fr min-content min-content;
@@ -100,13 +101,13 @@ input.hero-form::placeholder{
 
 }
 .offer-card-container {
+    padding:5rem 0;
     gap:3.6rem;
 }
 .card--hero{
     background-color:var(--white);
     height:20rem;
     weight:28rem;
-    margin-top:5rem;
     border-radius: 16px;
     background-color:var(--light-gray);
     -webkit-border-radius: 16px;
