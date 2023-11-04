@@ -8341,14 +8341,12 @@ input.hero-form::placeholder {
 }
 
 .email-subcribe-section-container {
-  background-color: var(--white);
-  width: 100%;
+  margin: 0 auto;
+  padding: 0 5rem;
+  max-width: 124rem;
 }
 .email-subcribe-section-container__inner {
-  margin: 0 auto;
-  max-width: 124rem;
   background-color: var(--light-blue);
-  width: 93%;
   height: 20.5rem;
   display: flex;
   justify-content: space-around;
@@ -8424,7 +8422,6 @@ input.hero-form::placeholder {
   grid-template-columns: repeat(4, 1fr);
   justify-items: center;
   gap: 30px;
-  width: 90%;
 }
 .footer-section-container_inner__container {
   display: flex;
@@ -8455,6 +8452,7 @@ input.hero-form::placeholder {
 }
 .footer-section-container__footer-links .link-list-item {
   display: flex;
+  justify-content: start;
   gap: 15px;
   padding-bottom: 5rem;
 }/*# sourceMappingURL=style.css.map */
