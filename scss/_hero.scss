@@ -26,7 +26,13 @@
     -moz-border-radius:8px;
     -ms-border-radius:8px;
     -o-border-radius:8px;
+     color:var(--gray);
+    background-color: var(--white);
+    
 }
+.btn-hero:hover{
+    background-color: var(--white);
+  }
 .hero-form{
     height:5.2rem;
     padding:2rem 5rem;

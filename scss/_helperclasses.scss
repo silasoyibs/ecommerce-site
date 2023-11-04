@@ -21,11 +21,17 @@
     grid-template-columns: repeat(5, 1fr);
   }
 
-  .btn{
-    color:var(--gray);
-    background-color: var(--white);
-    // padding:2rem 5.2rem;
-  }
-  .btn:hover{
-    background-color: var(--white);
+.btn {
+    font-size: 2rem;
+    font-weight: 700;
+    border: none;
+    display: block;
+    background-color: var(--dark-blue);
+    color:var(--white);
+    padding: 10px 44px 10px 44px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
   }
