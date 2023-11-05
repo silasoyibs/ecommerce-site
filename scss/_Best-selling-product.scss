@@ -1,6 +1,5 @@
 .Best-selling-product-bg-container{
     background-color: var(--pale-blue);
-    width:100%;
     & h2,span{
         font-size:2.4rem;
         font-weight:700;
@@ -51,9 +50,8 @@
         align-self:center;
     }
     &--left{
-        padding-top:3rem;
+        padding-top:1rem;
         display:flex;
-        gap:5px;
         flex-direction: column;
         font-weight: 600;
         & h2{
@@ -101,10 +99,17 @@
 }
 }
 .card-container{
+    width: 100%;
     padding:5rem 0;
-    grid-template-columns:repeat(auto-fit, minmax(30rem,1fr));
-    gap:3rem;
-    justify-items: center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:2rem;
+    justify-items:start;
+    // @media screen and (max-width:64em){
+    //     grid-template-columns:repeat(2,1fr);
+    // }
 }
 .Best-selling-product-bg-container--top-product{
     background-color:var(--white);

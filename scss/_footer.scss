@@ -1,6 +1,10 @@
 .footer-section-container{
+    position:relative;
+    z-index: -10000000;
+    margin-top:-10rem;
     background-color:var(--navy-dark-Blue);
     color:var(--white);
+    overflow: hidden !important;
     &_inner{
         padding: 20rem 0 3rem 0;
         display:grid;

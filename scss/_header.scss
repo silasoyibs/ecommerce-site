@@ -16,6 +16,9 @@
     justify-content:space-between;
     width:70rem;
     padding:0 3rem;
+    @media screen and (max-width:48em){
+       display:none;
+      }
   
   }
   .nav-links a{
@@ -55,3 +58,14 @@
 .nav-links a:hover::before, .nav-links a:hover{
   width:100%;
 }
+
+.tablet-toggler{
+  border:transparent!important;
+  outline:none;
+}
+
+// .dropdown{
+//     @media screen and (max-width:48em){
+//       display:flex;
+//      }
+//   }

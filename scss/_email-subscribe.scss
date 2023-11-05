@@ -6,14 +6,16 @@
         background-color: var(--light-blue);
         height:20.5rem;
         display:flex;
-        justify-content: space-around;
         align-items: center;
+        justify-content: center;
+        padding:3rem;
         border-radius: 16px;
          -webkit-border-radius: 16px;
         -moz-border-radius: 16px;
         -ms-border-radius: 16px;
         -o-border-radius: 16px;
         &--left{
+            width:50%;
             & h2{
                 font-size: 4rem;
                 font-weight:700;
@@ -30,7 +32,11 @@
         &--right{
             display: flex;
             gap:1rem;
+            width:50%;
+            flex-wrap:wrap;
+            justify-content:start;
             & form input{
+                width:25%;
                 position: relative;
                 background-color: transparent;
                 height:5.2rem;

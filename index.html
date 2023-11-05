@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- nav start -->
-      <nav class="center-container nav-bar">
+    <!-- nav start --> 
+        <nav class="center-container nav-bar navbar navbar-expand-md">
           <div class="logo-brand-container"><p class="logo-brand">LOGO</p></div>
           <ul class="nav-links">
             <li><a href="#">Home</a></li>
@@ -23,8 +23,8 @@
             <li><a href="#">Canva</a></li>
             <li><a href="#">Neflix</a></li>
           </ul>
-          <!-- <div class="nav-translator"><p></p><img class="drop-down-icon"src="/img/Vector.svg"></div> -->
-          <div class="dropdown">
+      
+          <div class="dropdown d-flex gap-5">
             <p class="dropdown-toggle"  data-bs-toggle="dropdown" aria-expanded="false">
                 <span class="nav-translator">Eng</span>
             </p>
@@ -33,13 +33,42 @@
               <li><a class="dropdown-item" href="#">Ge</a></li>
               <li><a class="dropdown-item" href="#">iz</a></li>
             </ul>
-          </div>
+            <div class="d-lg-none">
+              <img src="img/akar-icons_search.svg" alt="">
+            </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+            <span ><img src="img/tablet-menu.svg" alt="" class="tablet-toggler"></span>
+         </button>
+  
+       </div>
       </nav> 
+      
+
+      <!-- hamburger menu start -->
+          <div class="bg-dark offcanvas offcanvas-end" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                <ul class="tablet-nav--container">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Microsoft</a></li>
+                  <li><a href="#">Freepik</a></li>
+                  <li><a href="#">windows</a></li>
+                  <li><a href="#">Gift Card</a></li>
+                  <li><a href="#">Canva</a></li>
+                  <li><a href="#">Neflix</a></li>
+                </ul>
+                <div class="tab-register">
+                  <a href="btn">Register</a>
+                  <a href="btn">Login</a>
+                </div>
+              </div>
+        </div>
+      <!-- hamburger menu  end-->
      <!-- nav end -->
+
      <!-- hero Section start -->
      <section class="hero-bg-container">
         <div class="hero-bg-inner-container center-container">
-            <div class="grid grid-4-cols grid-4-cols--hero">
+            <div class=" d-none-tab grid grid-4-cols grid-4-cols--hero">
               <button class="btn-hero"><img src="img/categories.svg" class="category-icon"><span>Categories</span></button>
               <form class="needs-validation hero-form-container">
                   <input type="text" class="hero-form  form-control" id="validationCustom03" placeholder="search">
@@ -171,8 +200,8 @@
      </section>
      <!-- Best Selling products End -->
      <!-- Top Featured products products Start -->
-     <section class="Best-selling-product-bg-container Best-selling-product-bg-container--top-product">
-      <div class="Best-selling-product-bg-container__inner center-container pt-5">
+     <section class="display Best-selling-product-bg-container Best-selling-product-bg-container--top-product center-container">
+      <div class="Best-selling-product-bg-container__inner  pt-5">
        <h2>Top Featured<span>Products</span></h2>
  
        <div class="grid card-container">
@@ -257,7 +286,7 @@
     </section>
      <!-- Top Featured products products End -->
       <!-- Netflix paxckage start -->
-        <section class="netflix-packages-section-container">
+        <section class="display netflix-packages-section-container">
           <h2>Netflix Packages</h2>
           <div class="netflix-packages-section-container__card-container center-container grid">
               <div class="netflix-packages-section-container__card-container__item ">
@@ -285,7 +314,7 @@
         </section>
 
         <!-- Active promotion start -->
-         <section class="active-promotions-section-container">    
+         <section class="display active-promotions-section-container">    
            <div class="center-container">
                 <h2>Active Promotions</h2>
                 <div class="active-promotions-section-container__gallery-container">
@@ -312,7 +341,7 @@
         </section>
         <!-- Active promotion end -->
            <!-- Email subcribe section start-->
-           <section class="email-subcribe-section-container">    
+           <section class="display email-subcribe-section-container">    
               <div class="email-subcribe-section-container__inner">
                   <div class="email-subcribe-section-container__inner--left">
                      <h2>Subcribe Us</h2>
@@ -328,7 +357,7 @@
               </div>
           </section>
            <!-- Email subcribe section end-->
-           <footer class="footer-section-container center-container">
+           <footer class="display footer-section-container center-container">
              <div class="footer-section-container_inner">
               <div class="footer-section-container_inner__container">
                 <div>LOGO</div>
@@ -378,8 +407,9 @@
               </ul>
             </div>
            </footer>
+           
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
