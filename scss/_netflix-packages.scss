@@ -1,8 +1,8 @@
 .netflix-packages-section-container {
   background-color: var(--white);
-  margin: 0 auto;
-  max-width: 124rem;
-  padding: 0 5rem;
+  @media screen and (max-width:64em){
+    font-size:1.5rem;
+ }
   & h2 {
     font-size: 2.4rem;
     font-weight: 700;

@@ -12468,9 +12468,11 @@ input.hero-form::placeholder {
 
 .netflix-packages-section-container {
   background-color: var(--white);
-  margin: 0 auto;
-  max-width: 124rem;
-  padding: 0 5rem;
+}
+@media screen and (max-width: 64em) {
+  .netflix-packages-section-container {
+    font-size: 1.5rem;
+  }
 }
 .netflix-packages-section-container h2, .netflix-packages-section-container .h2 {
   font-size: 2.4rem;
@@ -12529,6 +12531,11 @@ input.hero-form::placeholder {
 .active-promotions-section-container {
   background-color: var(--white);
 }
+@media screen and (max-width: 48em) {
+  .active-promotions-section-container {
+    padding: 0 2rem;
+  }
+}
 .active-promotions-section-container h2, .active-promotions-section-container .h2 {
   font-size: 2.4rem;
   font-weight: 700;
@@ -12538,8 +12545,23 @@ input.hero-form::placeholder {
   padding: 5rem 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-row: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   gap: 29px;
+}
+@media screen and (max-width: 48em) {
+  .active-promotions-section-container__gallery-container {
+    font-size: 1rem;
+    gap: 10px;
+  }
+}
+@media screen and (max-width: 30em) {
+  .active-promotions-section-container__gallery-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+}
+.active-promotions-section-container__gallery-container figure {
+  margin: 0;
 }
 .active-promotions-section-container__gallery-container figure img {
   display: block;
@@ -12560,6 +12582,11 @@ input.hero-form::placeholder {
   background-repeat: no-repeat;
   border-radius: 16px;
   grid-row: auto/span 2;
+}
+@media screen and (max-width: 30em) {
+  .active-promotions-section-container__gallery-container figure:nth-child(2) {
+    grid-rows: auto;
+  }
 }
 .active-promotions-section-container__gallery-container__middle-image {
   display: flex;
@@ -12587,10 +12614,26 @@ input.hero-form::placeholder {
 .active-promotions-section-container__gallery-container .globe--2 {
   grid-column: 3/-1;
 }
+@media screen and (max-width: 30em) {
+  .active-promotions-section-container__gallery-container .globe--2 {
+    grid-columns: auto;
+  }
+}
 
 .btn--secondary {
   color: var(--light-blue);
   background-color: var(--white);
+}
+@media screen and (max-width: 64em) {
+  .btn--secondary {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 48em) {
+  .btn--secondary {
+    font-size: 1.2rem;
+    padding: 1rem;
+  }
 }
 
 .email-subcribe-section-container {
