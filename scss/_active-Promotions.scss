@@ -1,101 +1,99 @@
-.active-promotions-section-container{
-    background-color: var(--white);
-    @media screen and (max-width:48em){
-      padding:0 2rem;
-   }
-    
-    
-    & h2 {
-      font-size: 2.4rem;
-      font-weight: 700;
-      color: var(--dark-gray);
+.active-promotions-section-container {
+  background-color: var(--white);
+  @media screen and (max-width: 48em) {
+    padding: 0 2rem;
+  }
+
+  & h2 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--dark-gray);
+  }
+  &__gallery-container {
+    padding: 5rem 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 0.5fr);
+    column-gap: 15px;
+    row-gap: 15px;
+
+    @media screen and (max-width: 48em) {
+      font-size: 1rem;
+      gap: 10px;
     }
-    &__gallery-container{
-        padding:5rem  0;
-        display:grid;
-        grid-template-columns:repeat(3,1fr);
-        grid-template-rows:repeat(2,1fr);
-        gap:29px;
-         
-          @media screen and (max-width:48em){
-            font-size:1rem;
-            gap:10px;
-         }
-         @media screen and (max-width:30em){
-          grid-template-columns:1fr;
-          grid-template-rows:auto;
-       }
-       & figure {
-        margin:0;
-       }
-   
-        & figure img{
-            display: block;
-            object-fit: cover;
-            height:100%;
-            width:100%;
-            border-radius: 16px;
-            -webkit-border-radius: 16px;
-            -moz-border-radius: 16px;
-            -ms-border-radius: 16px;
-            -o-border-radius: 16px;
-}
-        & figure:nth-child(2){
-            background-image: url(/img/phone.jpg);
-            background-size:cover;
-            background-position:center;
-            background-repeat: no-repeat;
-            border-radius:16px;
-            grid-row:auto/span 2;     
-            @media screen and (max-width:30em){
-              grid-rows:auto;
-           }     
-        }
-      &__middle-image{
-        display:flex;
-        gap:5px;
-        flex-direction:column;
-        align-items: center;
-        justify-content: flex-start;
-        padding-top:7em;
+    @media screen and (max-width: 30em) {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+    }
+    & figure {
+      margin: 0;
+    }
+
+    & figure img {
+      display: block;
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+      border-radius: 16px;
+      -webkit-border-radius: 16px;
+      -moz-border-radius: 16px;
+      -ms-border-radius: 16px;
+      -o-border-radius: 16px;
+    }
+    & figure:nth-child(2) {
+      background-image: url(/img/phone.jpg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      border-radius: 16px;
+      grid-row: auto/span 2;
+      @media screen and (max-width: 30em) {
+        grid-row: auto;
       }
-      
-        & .globe{
-            display:flex;
-            flex-direction: column;
-            align-items:center;
-            justify-content:center;
-            gap:5px;
-            background-color: var(--gray);
-            padding:2rem;
-            height:30rem;
-            border-radius: 16px;;
-            -webkit-border-radius: 16px;
-            -moz-border-radius: 16px;
-            -ms-border-radius: 16px;
-            -o-border-radius: 16px;
-        
-            }
-            & .globe--2{
-                grid-column:3/-1 ;
-                @media screen and (max-width:30em){
-                  grid-columns:auto;
-               }
-                
-            } 
+    }
+    &__middle-image {
+      display: flex;
+      gap: 5px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 2rem;
+      @media screen and (max-width: 30em) {
+        padding: 5.5rem;
+      }
     }
 
-}
-
-.btn--secondary{
-    color:var(--light-blue);
-    background-color:var(--white);
-    @media screen and (max-width:64em){
-       font-size:1.5rem;
+    & .globe {
+      align-self: end;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      background-color: var(--gray);
+      padding: 2rem;
+      height: 30rem;
+      border-radius: 16px;
+      -webkit-border-radius: 16px;
+      -moz-border-radius: 16px;
+      -ms-border-radius: 16px;
+      -o-border-radius: 16px;
     }
-    @media screen and (max-width:48em){
-      font-size:1.2rem;
-      padding:1rem;
-   }
+    & .globe--2 {
+      grid-column: 3/-1;
+      @media screen and (max-width: 30em) {
+        grid-columns: auto;
+      }
+    }
+  }
 }
 
+.btn--secondary {
+  color: var(--light-blue);
+  background-color: var(--white);
+
+  @media screen and (max-width: 48em) {
+    font-size: 1.2rem;
+    padding: 1rem;
+  }
+}

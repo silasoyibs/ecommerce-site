@@ -1,48 +1,48 @@
-.footer-section-container{
-    position:relative;
-    z-index: -10000000;
-    margin-top:-10rem;
-    background-color:var(--navy-dark-Blue);
-    color:var(--white);
-    overflow: hidden !important;
-    &_inner{
-        padding: 20rem 0 3rem 0;
-        display:grid;
-        grid-template-columns: repeat(4,1fr);
-        justify-items:center;
-        gap:30px;
-        &__container{
-            display:flex;
-            flex-direction: column;
-            gap: 10px;
-            & div{
-                font-size: 3.6rem;
-                font-weight:700;
-                color:var(--white)
-            }
-            & .footer-link-heading{
-                font-size: 3.2rem;
-                font-weight:700;
-                color:var(--white)
-            }
-          & .link-list-item{
-            display:flex;
-            flex-direction: column;
-            gap:20px;
-            padding-top:3rem;
-                & a{
-                font-family: sans-serif;
-                font-weight: 400;
-                font-size: 1.6rem;
-                color:var(--white);
-                }
-          }
+.footer-section-container {
+  position: relative;
+  z-index: -10000000;
+  margin-top: -10rem;
+  background-color: var(--navy-dark-Blue);
+  color: var(--white);
+  // overflow: hidden !important;
+  &_inner {
+    padding: 20rem 0 3rem 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    gap: 10px;
+    &__container {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      & div {
+        font-size: 3.6rem;
+        font-weight: 700;
+        color: var(--white);
+      }
+      & .footer-link-heading {
+        font-size: 3.2rem;
+        font-weight: 700;
+        color: var(--white);
+      }
+      & .link-list-item {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding-top: 3rem;
+        & a {
+          font-family: sans-serif;
+          font-weight: 400;
+          font-size: 1.6rem;
+          color: var(--white);
         }
+      }
     }
-    &__footer-links .link-list-item {
-        display:flex;
-        justify-content: start;
-        gap:15px;
-        padding-bottom: 5rem;
-        }
-    }
+  }
+  &__footer-links .link-list-item {
+    display: flex;
+    justify-content: start;
+    gap: 15px;
+    padding-bottom: 5rem;
+  }
+}
