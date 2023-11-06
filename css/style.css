@@ -12066,7 +12066,7 @@ html {
   display: block;
   background-color: var(--dark-blue);
   color: var(--white);
-  padding: 10px 44px 10px 44px;
+  padding: 1rem 2.5rem;
   border-radius: 8px;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
@@ -12282,7 +12282,7 @@ input.hero-form::placeholder {
 @media screen and (max-width: 48em) {
   .offer-card-container {
     grid-template-columns: repeat(2, 1fr);
-    padding: 1rem 0;
+    padding: 2rem 0;
     padding-bottom: 5rem;
   }
 }
@@ -12485,8 +12485,11 @@ input.hero-form::placeholder {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 3px;
   border-radius: 16px;
+}
+.netflix-packages-section-container__card-container__item img {
+  width: 50%;
 }
 .netflix-packages-section-container__card-container__item p {
   font-size: 2rem;
@@ -12507,10 +12510,20 @@ input.hero-form::placeholder {
 
 .netflix-packages-section-container__card-container {
   padding: 5rem 0;
-  grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
+  display: flex;
   align-items: center;
-  justify-items: center;
-  gap: 0px;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 23em) {
+  .netflix-packages-section-container__card-container {
+    padding: 2rem 0;
+  }
+}
+
+.btn--netflix {
+  align-self: start;
 }
 
 .active-promotions-section-container {

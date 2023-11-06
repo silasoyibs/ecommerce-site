@@ -107,7 +107,7 @@ input.hero-form::placeholder {
   gap: 2rem;
   @media screen and (max-width: 48em) {
     grid-template-columns: repeat(2, 1fr);
-    padding: 1rem 0;
+    padding: 2rem 0;
     padding-bottom: 5rem;
   }
 }
@@ -166,7 +166,7 @@ input.hero-form::placeholder {
   }
 }
 
-.btn-close-white {
-  // padding: 2rem 2rem 0 0;
+// .btn-close-white {
+//   // padding: 2rem 2rem 0 0;
    
-}
+// }
