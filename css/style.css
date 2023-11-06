@@ -12328,7 +12328,7 @@ input.hero-form::placeholder {
   align-self: center !important;
   justify-self: center !important;
   display: flex;
-  gap: 3rem;
+  gap: 2rem;
   padding-top: 3rem;
 }
 .tab-register a {
