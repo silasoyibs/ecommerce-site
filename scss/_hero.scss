@@ -114,7 +114,7 @@ input.hero-form::placeholder {
 .card--hero {
   background-color: var(--white);
   height: 20rem;
-   font-weight: 28rem;
+  font-weight: 28rem;
   border-radius: 16px;
   background-color: var(--light-gray);
   -webkit-border-radius: 16px;
@@ -134,9 +134,8 @@ input.hero-form::placeholder {
   margin-top: 5rem;
 }
 
-
 .tablet-nav--container {
-  padding-top:5rem;
+  padding-top: 5rem;
   align-self: center !important;
   justify-self: center !important;
   display: flex;
@@ -144,25 +143,30 @@ input.hero-form::placeholder {
   gap: 20px;
 
   & a {
-    font-size: 2rem;
+    font-size: 1.7rem;
     color: var(--white);
-    &:hover{
-        color: var(--light-blue);
+    &:hover {
+      color: var(--light-blue);
     }
   }
 }
 
-        .tab-register{
-            align-self: center !important;
-            justify-self: center !important;
-            display:flex;
-            gap:2rem;
-            padding-top:3rem;
-            & a{
-                color:var(--white);
-                padding:1rem 2rem;
-                background-color:var(--dark-blue);
-                font-size:3rem;
-                border-radius: 16px;
-            }
-        }
+.tab-register {
+  align-self: center !important;
+  justify-self: center !important;
+  display: flex;
+  gap: 2rem;
+  padding-top: 3rem;
+  & a {
+    color: var(--white);
+    padding: 1rem 2rem;
+    background-color: var(--dark-blue);
+    font-size: 2rem;
+    border-radius: 16px;
+  }
+}
+
+.btn-close-white {
+  // padding: 2rem 2rem 0 0;
+   
+}
