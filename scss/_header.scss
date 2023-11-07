@@ -1,67 +1,70 @@
-.nav-bar{
-    display:flex;
-    height:8rem;
-    width:100%;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .logo-brand{
-    color:var(--light-blue);
-    font-size: 3.3rem;
-    font-weight: 600;
-  }
-  
-  .nav-links{
-    display:flex;
-    justify-content:space-between;
-    width:70rem;
-    padding:0 3rem;
-    @media screen and (max-width:48em){
-       display:none;
-      }
-  
-  }
-  .nav-links a{
-    color:var(--gray)
-  }
-  .nav-links a:active{
-    color:var(--light-blue);
-   
-  }
-  
-  .nav-translator{
-    color:var(--light-blue);
-    }
-
-  .navbar-brand{
-    color:var(--light-blue);
-  }
-  .nav-links li{
-    position:relative;
-    overflow: hidden;
+.nav-bar {
+  display: flex;
+  height: 8rem;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
 }
-  .nav-links a::before{
-    content:"";
-    display:inline-block;
-    height:4px;
-    width:0%;
-    background-color: var(--light-blue);
-    position:absolute;
-    bottom:-8%;
-    transition: all 1s;
-    -webkit-transition: all 1s;
-    -moz-transition: all 1s;
-    -ms-transition: all 1s;
-    -o-transition: all 1s;
+.logo-brand {
+  color: var(--light-blue);
+  font-size: 3.3rem;
+  font-weight: 600;
 }
 
-.nav-links a:hover::before, .nav-links a:hover{
-  width:100%;
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  width: 70rem;
+  padding: 0 3rem;
+  @media screen and (max-width: 48em) {
+    display: none;
+  }
+}
+.nav-links a {
+  color: var(--gray);
+}
+.nav-links a:active {
+  color: var(--light-blue);
 }
 
-.tablet-toggler{
-  border:transparent!important;
-  outline:none;
+.nav-translator {
+  color: var(--light-blue);
+}
+
+.navbar-brand {
+  color: var(--light-blue);
+}
+.nav-links li {
+  position: relative;
+  overflow: hidden;
+}
+.nav-links a::before {
+  content: "";
+  display: inline-block;
+  height: 4px;
+  width: 0%;
+  background-color: var(--light-blue);
+  position: absolute;
+  bottom: -8%;
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+}
+
+.nav-links a:hover::before,
+.nav-links a:hover {
+  width: 100%;
+}
+
+.tablet-toggler {
+  border: transparent !important;
+  outline: none;
+}
+
+.display {
+  display: none;
 }
 
 // .dropdown{

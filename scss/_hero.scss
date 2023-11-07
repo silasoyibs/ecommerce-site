@@ -11,6 +11,9 @@
   align-items: center;
   grid-template-columns: min-content 1fr min-content min-content;
   gap: 20px;
+  @media screen and (max-width: 48em) {
+    display: none;
+  }
 }
 .btn-hero {
   display: flex;
@@ -42,14 +45,19 @@ input.hero-form::placeholder {
 .hero-form-container {
   position: relative;
 }
+
+.hero-form-container input {
+  width: 100%;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+}
 .hero-search-icon {
   position: absolute;
-  bottom: 50%;
-  transform: translate(50%, 50%);
-  -webkit-transform: translate(50%, 50%);
-  -moz-transform: translate(50%, 50%);
-  -ms-transform: translate(50%, 50%);
-  -o-transform: translate(50%, 50%);
+  top: 50%;
+  transform: translateY(-50%);
+  transform: -50%;
+  left: 3%;
 }
 .category-icon {
   height: 1.8rem;
@@ -98,9 +106,22 @@ input.hero-form::placeholder {
 .hero-shopping-icon {
   height: 5rem;
 }
-.login-details p {
+.login {
+  display: flex;
+  gap: 10px;
+  width: 30%;
+  align-items: center;
+}
+
+.login-details p,
+.login-details span {
+  color: var(--white);
   font-size: 1.3rem;
   font-weight: 600;
+  white-space: nowrap;
+}
+.login-details p {
+  font-size: 2rem;
 }
 .offer-card-container {
   padding: 5rem 0;
@@ -112,6 +133,10 @@ input.hero-form::placeholder {
   }
 }
 .card--hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
   background-color: var(--white);
   height: 20rem;
   font-weight: 28rem;
@@ -130,9 +155,9 @@ input.hero-form::placeholder {
   background-color: var(--light-blue);
   color: var(--white);
 }
-.card-text-tittle {
-  margin-top: 5rem;
-}
+// .card-text-tittle {
+//   margin-top: 5rem;
+// }
 
 .tablet-nav--container {
   padding-top: 5rem;
@@ -168,5 +193,5 @@ input.hero-form::placeholder {
 
 // .btn-close-white {
 //   // padding: 2rem 2rem 0 0;
-   
+
 // }

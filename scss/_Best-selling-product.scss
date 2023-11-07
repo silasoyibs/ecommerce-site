@@ -10,6 +10,9 @@
     color: #353737;
     margin-left: 5px;
   }
+  & h2 {
+    padding-top: 3rem;
+  }
 
   &__inner__card {
     display: grid;
@@ -23,8 +26,8 @@
     -ms-border-radius: 16px;
     -o-border-radius: 16px;
     @media screen and (max-width: 23em) {
-       width:100%;
-      }
+      width: 100%;
+    }
     &__discount-off {
       display: flex;
       align-items: center;
@@ -38,7 +41,6 @@
       -moz-border-radius: 16px 0px 0px 0px;
       -ms-border-radius: 16px 0px 0px 0px;
       -o-border-radius: 16px 0px 0px 0px;
-      
     }
     &__discount-off span {
       font-size: 1.3rem;
@@ -53,7 +55,7 @@
       @media screen and (max-width: 23em) {
         padding: 0 1rem;
         gap: 2px;
-        }
+      }
 
       &--right {
         align-self: center;
@@ -63,16 +65,17 @@
         //         width:3rem;
         //     }
         //     }
-        
       }
       &--left {
         padding-top: 1rem;
         display: flex;
         flex-direction: column;
         font-weight: 600;
+        gap: 8px;
         & h2 {
           font-size: 2.2rem;
           color: #2a2a2a;
+          white-space: nowrap;
         }
         & p {
           font-size: 1.4rem;
@@ -110,14 +113,13 @@
 }
 .card-container {
   width: 100%;
-  padding: 5rem 0;
+  padding: 3rem 0;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   flex-wrap: wrap;
   gap: 2rem;
   justify-items: start;
-  
 }
 .Best-selling-product-bg-container--top-product {
   background-color: var(--white);

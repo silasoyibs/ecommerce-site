@@ -1,11 +1,11 @@
 .netflix-packages-section-container {
   background-color: var(--white);
-  @media screen and (max-width:64em){
-    font-size:1.5rem;
- }
- @media screen and (max-width:30em){
-   padding:0 2rem;
-}
+  @media screen and (max-width: 64em) {
+    font-size: 1.5rem;
+  }
+  @media screen and (max-width: 30em) {
+    padding: 0 2rem;
+  }
   & h2 {
     font-size: 2.4rem;
     font-weight: 700;
@@ -14,33 +14,33 @@
   }
   &__card-container__item {
     background-color: var(--light-gray);
-    width:50rem;
+    width: 50rem;
     height: 30rem;
     display: flex;
-    align-items:center;
+    align-items: center;
     justify-content: center;
-    gap:3px;
+    gap: 3px;
     border-radius: 16px;
 
-    & img{
-      width:50%;
+    & img {
+      width: 50%;
     }
 
     & p {
       font-size: 2rem;
-      font-weight:600;
-      line-height:4rem;
+      font-weight: 600;
+      line-height: 4rem;
     }
 
     & span {
       font-size: 2.4rem;
       color: var(--light-blue);
-      line-height:7rem;
-      font-weight: 600; 
+      line-height: 7rem;
+      font-weight: 600;
     }
 
-    &__content{
-      display:flex;
+    &__content {
+      display: flex;
       align-self: center;
       flex-direction: column;
     }
@@ -48,17 +48,16 @@
 }
 
 .netflix-packages-section-container__card-container {
-  padding:5rem 0;
-  display:flex;
+  padding: 5rem 0;
+  display: flex;
   align-items: center;
-  justify-content: center;
-  gap:20px;
-  flex-wrap:wrap;
-  @media screen and (max-width:23em){
-    padding:2rem 0;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap;
+  @media screen and (max-width: 23em) {
+    padding: 2rem 0;
   }
 }
-.btn--netflix{
-  align-self:start;
+.btn--netflix {
+  align-self: start;
 }
-

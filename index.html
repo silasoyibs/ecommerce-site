@@ -8,11 +8,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="scss/style.scss">
 </head>
 <body>
     <!-- nav start --> 
-        <nav class="center-container nav-bar navbar navbar-expand-md">
+  <nav class="center-container nav-bar">
           <div class="logo-brand-container"><p class="logo-brand">LOGO</p></div>
           <ul class="nav-links">
             <li><a href="#">Home</a></li>
@@ -24,7 +24,7 @@
             <li><a href="#">Neflix</a></li>
           </ul>
       
-          <div class="dropdown d-flex gap-5">
+          <div class="dropdown display">
             <p class="dropdown-toggle"  data-bs-toggle="dropdown" aria-expanded="false">
                 <span class="nav-translator">Eng</span>
             </p>
@@ -41,11 +41,11 @@
          </button>
   
        </div>
-      </nav> 
+  </nav> 
       
 
       <!-- hamburger menu start -->
-          <div class="bg-dark offcanvas offcanvas-end" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+          <div class="bg-dark offcanvas offcanvas-end display" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
                 <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 <ul class="tablet-nav--container">
                   <li><a href="#">Home</a></li>
@@ -68,10 +68,10 @@
      <!-- hero Section start -->
      <section class="hero-bg-container">
         <div class="hero-bg-inner-container center-container">
-            <div class=" d-none-tab grid grid-4-cols grid-4-cols--hero">
+            <div class="grid grid-4-cols grid-4-cols--hero">
               <button class="btn-hero"><img src="img/categories.svg" class="category-icon"><span>Categories</span></button>
-              <form class="needs-validation hero-form-container">
-                  <input type="text" class="hero-form  form-control" id="validationCustom03" placeholder="search">
+              <form class="hero-form-container">
+                  <input type="text" class="hero-form  form-control"  placeholder="search">
                   <img src="img/hero-search-icon.svg" alt="" class="hero-search-icon">
               </form>
               <div class="shopping-cart">
@@ -80,13 +80,13 @@
                   <img src="img/fa6-solid_bag-shopping.svg" alt="shpping-bag">
                 </div>
               </div>
-              <div class="Login d-flex align-items-center gap-3">
+              <div class="login d-flex align-items-center gap-3">
                 <div class="hero-icons">
                   <img src="img/ant-design_user-outlined.svg" alt="shpping-bag">
                 </div>
                 <div class="login-details">
-                  <p class="text-light text-nowrap">Thomas Bufler</p>
-                  <span class="text-light">Tittle</span>
+                  <p >Thomas Bufler</p>
+                  <span>Tittle</span>
                 </div>
               </div>
             </div>
@@ -318,10 +318,12 @@
                 <h2>Active Promotions</h2>
                 <div class="active-promotions-section-container__gallery-container">
                   <figure><img src="img/book-pen.jpg" alt=""></figure>
-                  <figure class="active-promotions-section-container__gallery-container__middle-image">
-                    <div><img src="img/globe.svg" alt=""></div>
-                    <p class="mb-5 text-center ">Lorem ipsum dolor sit amet consectetur. Orci laoreet amet faucibus felis at. Neque feugiat nisl felis volutpat. Est.</p>
-                    <button class="btn btn--secondary">Browse Product</button>
+                  <figure>
+                    <div class="active-promotions-section-container__gallery-container__middle-image">
+                      <div><img src="img/globe.svg" alt=""></div>
+                      <p class="mb-5 text-center ">Lorem ipsum dolor sit amet consectetur. Orci laoreet amet faucibus felis at. Neque feugiat nisl felis volutpat. Est.</p> 
+                      <button class="btn btn--secondary">Browse Product</button>
+                    </div>
                   </figure>
                   <figure><img src="img/tablet.jpg" alt=""></figure>
                   <div class="globe">

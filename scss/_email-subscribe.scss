@@ -17,6 +17,10 @@
     -moz-border-radius: 16px;
     -ms-border-radius: 16px;
     -o-border-radius: 16px;
+    @media screen and (max-width: 64em) {
+      gap: 0.5rem;
+      padding: 2rem;
+    }
     @media screen and (max-width: 30em) {
       flex-direction: column;
       background-color: var(--navy-dark-Blue);
