@@ -115,7 +115,7 @@
      <!-- hero section End -->
      <!-- Best Selling products start-->
      <section class="Best-selling-product-bg-container">
-       <div class="Best-selling-product-bg-container__inner center-container pt-5">
+       <div class="Best-selling-product-bg-container__inner center-container">
         <h2>Best Selling<span>Products</span></h2>
   
         <div class="grid card-container">
@@ -145,7 +145,7 @@
             </div>
             <!-- card 1 end-->
               <!-- card 2 -->
-              <div class="Best-selling-product-bg-container__inner__card">
+              <div class="Best-selling-product-bg-container__inner__card d-none-mobile">
                 <div class="Best-selling-product-bg-container__inner__card__discount-off"><span>50% off</span></div>
                   <div class="Best-selling-product-bg-container__inner__card-item ">
                       <div class="Best-selling-product-bg-container__inner__card-item--left">
@@ -170,7 +170,7 @@
               </div>
               <!-- card 2 end-->
                 <!-- card 3 -->
-            <div class="Best-selling-product-bg-container__inner__card">
+            <div class="Best-selling-product-bg-container__inner__card d-none-mobile">
               <div class="Best-selling-product-bg-container__inner__card__discount-off"><span>50% off</span></div>
                 <div class="Best-selling-product-bg-container__inner__card-item ">
                     <div class="Best-selling-product-bg-container__inner__card-item--left">
@@ -194,8 +194,8 @@
                 </div>
             </div>
             <!-- card 3 end-->
+            <button class="btn btn--view-more d-none-ld">View more</button>
           </div>
-              
           </div>
      </section>
      <!-- Best Selling products End -->
@@ -231,7 +231,7 @@
            </div>
            <!-- card 1 end-->
              <!-- card 2 -->
-             <div class="Best-selling-product-bg-container__inner__card Best-selling-product-bg-container__inner__card--top-product-card">
+             <div class="Best-selling-product-bg-container__inner__card Best-selling-product-bg-container__inner__card--top-product-card d-none-mobile">
               <div class="Best-selling-product-bg-container__inner__card__discount-off"><span>50% off</span></div>
                 <div class="Best-selling-product-bg-container__inner__card-item ">
                     <div class="Best-selling-product-bg-container__inner__card-item--left">
@@ -256,7 +256,7 @@
             </div>
              <!-- card 2 end-->
                <!-- card 3 -->
-               <div class="Best-selling-product-bg-container__inner__card Best-selling-product-bg-container__inner__card--top-product-card">
+               <div class="Best-selling-product-bg-container__inner__card Best-selling-product-bg-container__inner__card--top-product-card d-none-mobile">
                 <div class="Best-selling-product-bg-container__inner__card__discount-off"><span>50% off</span></div>
                   <div class="Best-selling-product-bg-container__inner__card-item ">
                       <div class="Best-selling-product-bg-container__inner__card-item--left">
@@ -280,13 +280,14 @@
                   </div>
               </div>
            <!-- card 3 end-->
-         </div>
-             
+          </div>
+          
+          <button class="btn btn--view-more d-none-ld">View more</button>
          </div>
     </section>
      <!-- Top Featured products products End -->
       <!-- Netflix paxckage start -->
-        <section class="netflix-packages-section-container">
+        <section class="netflix-packages-section-container center-container">
           <h2>Netflix Packages</h2>
           <div class="netflix-packages-section-container__card-container center-container">
               <div class="netflix-packages-section-container__card-container__item ">
@@ -299,7 +300,7 @@
                   </div>
               </div>
 
-              <div class="netflix-packages-section-container__card-container__item ">
+              <div class="netflix-packages-section-container__card-container__item d-none-mobile ">
                 <img src="img/netflix-movies-img.svg" alt="" class="image-fluid">
                 <div class="netflix-packages-section-container__card-container__item__content">
                   <img src="img/neflix-logo-red.svg" alt=""  class="image-fluid">
@@ -307,9 +308,8 @@
                   <span>200 $</span> 
                   <button class="btn btn--netflix">Shop Now</button>
                 </div>
-            </div>
-
-              
+              </div>
+              <button class="btn d-none-ld btn--view-more">View more</button>
           </div>
         </section>
 
@@ -317,7 +317,9 @@
          <section class="active-promotions-section-container center-container">    
                 <h2>Active Promotions</h2>
                 <div class="active-promotions-section-container__gallery-container">
-                  <figure><img src="img/book-pen.jpg" alt=""></figure>
+                  <figure>
+                      <img src="img/book-pen.jpg" alt="">
+                    </figure>
                   <figure>
                     <div class="active-promotions-section-container__gallery-container__middle-image">
                       <div><img src="img/globe.svg" alt=""></div>

@@ -128,8 +128,6 @@ input.hero-form::placeholder {
   gap: 2rem;
   @media screen and (max-width: 48em) {
     grid-template-columns: repeat(2, 1fr);
-    padding: 2rem 0;
-    padding-bottom: 5rem;
   }
 }
 .card--hero {

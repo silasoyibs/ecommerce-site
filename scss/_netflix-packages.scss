@@ -3,14 +3,15 @@
   @media screen and (max-width: 64em) {
     font-size: 1.5rem;
   }
-  @media screen and (max-width: 30em) {
-    padding: 0 2rem;
-  }
+
   & h2 {
     font-size: 2.4rem;
     font-weight: 700;
     color: var(--dark-gray);
     text-align: center;
+    @media screen and (max-width: 30em) {
+      padding-top: 3rem;
+    }
   }
   &__card-container__item {
     background-color: var(--light-gray);
@@ -51,12 +52,9 @@
   padding: 5rem 0;
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  gap: 20px;
+  justify-content: space-between;
+  gap: 1rem;
   flex-wrap: wrap;
-  @media screen and (max-width: 23em) {
-    padding: 2rem 0;
-  }
 }
 .btn--netflix {
   align-self: start;

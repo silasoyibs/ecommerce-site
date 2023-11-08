@@ -107,6 +107,25 @@ html {
   }
 }
 
+@media screen and (max-width: 30em) {
+  .d-none-mobile {
+    display: none !important;
+  }
+}
+
+.d-none-ld {
+  display: none;
+}
+@media screen and (max-width: 30em) {
+  .d-none-ld {
+    display: block;
+  }
+}
+
+.btn--view-more {
+  margin: 10px auto;
+}
+
 .nav-bar {
   display: flex;
   height: 8rem;
@@ -338,8 +357,6 @@ input.hero-form::placeholder {
 @media screen and (max-width: 48em) {
   .offer-card-container {
     grid-template-columns: repeat(2, 1fr);
-    padding: 2rem 0;
-    padding-bottom: 5rem;
   }
 }
 
@@ -416,6 +433,11 @@ input.hero-form::placeholder {
 .Best-selling-product-bg-container h2 {
   padding-top: 3rem;
 }
+@media screen and (max-width: 23em) {
+  .Best-selling-product-bg-container h2 {
+    padding-top: 2rem;
+  }
+}
 .Best-selling-product-bg-container__inner__card {
   display: grid;
   grid-template-rows: min-content 1fr min-content;
@@ -428,7 +450,7 @@ input.hero-form::placeholder {
   -ms-border-radius: 16px;
   -o-border-radius: 16px;
 }
-@media screen and (max-width: 23em) {
+@media screen and (max-width: 30em) {
   .Best-selling-product-bg-container__inner__card {
     width: 100%;
   }
@@ -513,7 +535,6 @@ input.hero-form::placeholder {
   padding: 3rem 0;
   display: flex;
   align-items: center;
-  justify-content: space-around;
   flex-wrap: wrap;
   gap: 2rem;
   justify-items: start;
@@ -535,16 +556,16 @@ input.hero-form::placeholder {
     font-size: 1.5rem;
   }
 }
-@media screen and (max-width: 30em) {
-  .netflix-packages-section-container {
-    padding: 0 2rem;
-  }
-}
 .netflix-packages-section-container h2 {
   font-size: 2.4rem;
   font-weight: 700;
   color: var(--dark-gray);
   text-align: center;
+}
+@media screen and (max-width: 30em) {
+  .netflix-packages-section-container h2 {
+    padding-top: 3rem;
+  }
 }
 .netflix-packages-section-container__card-container__item {
   background-color: var(--light-gray);
@@ -580,14 +601,9 @@ input.hero-form::placeholder {
   padding: 5rem 0;
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  gap: 20px;
+  justify-content: space-between;
+  gap: 1rem;
   flex-wrap: wrap;
-}
-@media screen and (max-width: 23em) {
-  .netflix-packages-section-container__card-container {
-    padding: 2rem 0;
-  }
 }
 
 .btn--netflix {
@@ -596,11 +612,6 @@ input.hero-form::placeholder {
 
 .active-promotions-section-container {
   background-color: var(--white);
-}
-@media screen and (max-width: 48em) {
-  .active-promotions-section-container {
-    padding: 0 2rem;
-  }
 }
 .active-promotions-section-container h2 {
   font-size: 2.4rem;
@@ -619,13 +630,16 @@ input.hero-form::placeholder {
 @media screen and (max-width: 48em) {
   .active-promotions-section-container__gallery-container {
     font-size: 1rem;
-    gap: 10px;
+    gap: 15px;
   }
 }
 @media screen and (max-width: 30em) {
   .active-promotions-section-container__gallery-container {
     grid-template-columns: 1fr;
-    grid-template-rows: auto;
+    grid-template-rows: 1fr;
+    -moz-column-gap: 15px;
+         column-gap: 15px;
+    padding: 5rem 0;
   }
 }
 .active-promotions-section-container__gallery-container figure {
@@ -653,7 +667,7 @@ input.hero-form::placeholder {
 }
 @media screen and (max-width: 30em) {
   .active-promotions-section-container__gallery-container figure:nth-child(2) {
-    grid-row: auto;
+    grid: row 0;
   }
 }
 .active-promotions-section-container__gallery-container__middle-image {
@@ -666,7 +680,7 @@ input.hero-form::placeholder {
 }
 @media screen and (max-width: 30em) {
   .active-promotions-section-container__gallery-container__middle-image {
-    padding: 5.5rem;
+    padding: 5rem;
   }
 }
 .active-promotions-section-container__gallery-container .globe {
@@ -691,13 +705,14 @@ input.hero-form::placeholder {
 }
 @media screen and (max-width: 30em) {
   .active-promotions-section-container__gallery-container .globe--2 {
-    grid-columns: auto;
+    grid-column: 1/-1;
   }
 }
 
 .btn--secondary {
   color: var(--light-blue);
   background-color: var(--white);
+  white-space: nowrap;
 }
 @media screen and (max-width: 48em) {
   .btn--secondary {
