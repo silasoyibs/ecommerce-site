@@ -57,7 +57,7 @@ html {
   max-width: 124rem;
   padding: 0 5rem;
 }
-@media screen and (max-width: 23em) {
+@media screen and (max-width: 30em) {
   .center-container {
     padding: 0 2rem;
   }
