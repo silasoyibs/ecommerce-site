@@ -202,8 +202,15 @@ html {
   display: none;
 }
 
+.dropdown-toggle {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  gap: 5px;
+}
+
 .hero-bg-container {
-  background-image: url(/img/hero-img.png);
+  background-image: url("/img/hero-img.png");
   width: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -658,7 +665,7 @@ input.hero-form::placeholder {
   -o-border-radius: 16px;
 }
 .active-promotions-section-container__gallery-container figure:nth-child(2) {
-  background-image: url(/img/phone.jpg);
+  background-image: url("/img/phone.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
