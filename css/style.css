@@ -20,6 +20,8 @@
 }
 
 html {
+  position: relative;
+  overflow-x: hidden;
   font-size: 62.5%;
 }
 @media screen and (max-width: 64em) {
@@ -101,6 +103,15 @@ html {
   -o-border-radius: 8px;
 }
 
+.d-lg-none {
+  display: none;
+}
+@media screen and (max-width: 64em) {
+  .d-lg-none {
+    display: block;
+  }
+}
+
 @media screen and (max-width: 48em) {
   .d-none-tab {
     display: none;
@@ -120,6 +131,10 @@ html {
   .d-none-ld {
     display: block;
   }
+}
+
+.d-none-desktop {
+  display: none;
 }
 
 .btn--view-more {
@@ -173,14 +188,19 @@ html {
   overflow: hidden;
 }
 
+.nav-links a {
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
 .nav-links a::before {
   content: "";
   display: inline-block;
-  height: 4px;
+  height: 3px;
   width: 0%;
   background-color: var(--light-blue);
   position: absolute;
-  bottom: -8%;
+  bottom: 0%;
   transition: all 1s;
   -webkit-transition: all 1s;
   -moz-transition: all 1s;
@@ -193,20 +213,143 @@ html {
   width: 100%;
 }
 
-.tablet-toggler {
-  border: transparent !important;
+.navbar-toggler {
+  border: transparent;
   outline: none;
+  background-color: var(--white);
+  display: none;
+}
+@media screen and (max-width: 64em) {
+  .navbar-toggler {
+    display: block;
+  }
 }
 
 .display {
   display: none;
 }
 
+.dropdown {
+  position: relative;
+}
+
 .dropdown-toggle {
   display: flex;
   align-items: center;
-  justify-items: center;
-  gap: 5px;
+  gap: 2px;
+}
+
+.dropdown .dropdown-menu {
+  position: absolute;
+  background-color: white;
+  display: block;
+  opacity: 0;
+  visibility: hidden;
+  padding: 2.5rem;
+  left: 0%;
+  color: #000;
+  margin-top: 5px;
+  box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.dropdown.active .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+.dropdown .dropdown-menu li {
+  padding-bottom: 1rem;
+}
+
+.dropdown .dropdown-menu li:last-child {
+  padding-bottom: 0rem;
+}
+
+.dropdown .dropdown-menu a {
+  color: #000;
+  text-decoration: none;
+}
+
+.dropdown .dropdown-menu a:hover {
+  color: var(--light-blue);
+}
+
+.tab-component-container {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.tablet-nav--container {
+  position: absolute;
+  right: 0;
+  background-color: #000000;
+  height: 100vh;
+  width: 50%;
+  transform: translateX(100%);
+  z-index: 1000;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.5s ease-in-out;
+}
+@media screen and (max-width: 48em) {
+  .tablet-nav--container {
+    display: flex;
+  }
+}
+
+.tablet-nav--container.open-tablet-menu {
+  transform: translateX(0);
+}
+
+.tablet-nav--container {
+  gap: 1rem;
+}
+
+.tablet-nav--container__links a {
+  color: var(--white);
+  font-size: 3rem;
+}
+
+.tablet-nav--container li {
+  margin-bottom: 20px;
+}
+
+.tablet-nav--container li:last-child {
+  margin-bottom: 20px;
+}
+
+.tablet-nav--container-btn-close {
+  padding: 2rem;
+  background-color: transparent;
+  position: absolute;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  top: 1rem;
+  left: 1rem;
+}
+
+.tablet-nav--container-btn-close .fa-xmark {
+  font-size: 6rem;
+  color: var(--white);
+}
+
+.tab-register {
+  align-self: center;
+  justify-self: center;
+  display: flex;
+  gap: 2rem;
+  padding-top: 3rem;
+}
+.tab-register a {
+  color: var(--white);
+  padding: 1rem 2rem;
+  background-color: var(--dark-blue);
+  font-size: 2rem;
+  border-radius: 16px;
 }
 
 .hero-bg-container {
@@ -391,37 +534,6 @@ input.hero-form::placeholder {
 .card--hero--canva {
   background-color: var(--light-blue);
   color: var(--white);
-}
-
-.tablet-nav--container {
-  padding-top: 5rem;
-  align-self: center !important;
-  justify-self: center !important;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-.tablet-nav--container a {
-  font-size: 1.7rem;
-  color: var(--white);
-}
-.tablet-nav--container a:hover {
-  color: var(--light-blue);
-}
-
-.tab-register {
-  align-self: center !important;
-  justify-self: center !important;
-  display: flex;
-  gap: 2rem;
-  padding-top: 3rem;
-}
-.tab-register a {
-  color: var(--white);
-  padding: 1rem 2rem;
-  background-color: var(--dark-blue);
-  font-size: 2rem;
-  border-radius: 16px;
 }
 
 .Best-selling-product-bg-container {
