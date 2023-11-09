@@ -20,7 +20,8 @@
 }
 
 html {
-  position: relative;
+  margin: 0;
+  padding: 0;
   overflow-x: hidden;
   font-size: 62.5%;
 }
@@ -48,6 +49,11 @@ html {
   html {
     font-size: 40%;
   }
+}
+
+body {
+  overflow-x: hidden !important;
+  position: relative;
 }
 
 .display {
@@ -106,7 +112,7 @@ html {
 .d-lg-none {
   display: none;
 }
-@media screen and (max-width: 64em) {
+@media screen and (max-width: 48em) {
   .d-lg-none {
     display: block;
   }
@@ -219,7 +225,7 @@ html {
   background-color: var(--white);
   display: none;
 }
-@media screen and (max-width: 64em) {
+@media screen and (max-width: 48em) {
   .navbar-toggler {
     display: block;
   }
@@ -283,20 +289,28 @@ html {
 .tablet-nav--container {
   position: absolute;
   right: 0;
-  background-color: #000000;
+  background-color: rgba(0, 0, 0, 0.8784313725);
   height: 100vh;
   width: 50%;
   transform: translateX(100%);
   z-index: 1000;
-  display: none;
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  transition: transform 0.5s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease-in-out;
 }
 @media screen and (max-width: 48em) {
   .tablet-nav--container {
-    display: flex;
+    opacity: 1;
+    visibility: visible;
+  }
+}
+@media screen and (max-width: 48em) {
+  .tablet-nav--container {
+    width: 70%;
   }
 }
 
